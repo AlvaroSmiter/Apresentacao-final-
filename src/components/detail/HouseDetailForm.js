@@ -26,7 +26,7 @@ const HouseDetailForm = ({ house }) => {
       <div className="house-detail-form__header">
         <div className="house-detail-form__price">
           <span className="house-detail-form__price-value">{house.price}$</span>
-          <span> / night</span>
+          <span> / Noite</span>
         </div>
         <div className="house-detail-form__rating">
           <div className="house-detail__rating">
@@ -36,9 +36,9 @@ const HouseDetailForm = ({ house }) => {
         </div>
       </div>
       <div className="house-detail-form__actions">
-        <button onClick={book}>Book</button>
-        <span>Or</span>
-        <button onClick={chatWithHost}>Chat with Host</button>
+        <button onClick={book}>Livro</button>
+        <span>Ou</span>
+        <button onClick={chatWithHost}>Fale com o anfitrião</button>
       </div>
     </div>
   );

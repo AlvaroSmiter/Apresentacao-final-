@@ -52,7 +52,7 @@ const Login = (props) => {
         routeService.navigate({ route: ROUTES.HOME, push: history.push });
       } else {
         uiService.hideLoading();
-        uiService.alert(`Your user's name or password is not correct`);
+        uiService.alert(`O seu nome de usurario o Senha está incorrecto`);
       }
     } catch (error) {
       uiService.hideLoading();
@@ -78,9 +78,11 @@ const Login = (props) => {
     <div className="login__container">
       <div className="login__welcome">
         <div className="login__logo">
-          <img src='https://assets-global.website-files.com/5f3c19f18169b65d9d0bf384/5f3c19f18169b655820bf3d4_asset%2021.svg' alt='logo' />
+          <img src='../img/unitel.svg' alt='logo' />
+          <div>
+            <h4><span style={{ color: "#590f87", fontWeight: 'bold' }}>Álvaro Smiter</span></h4></div>
         </div>
-        <p>Praticando <span style={{ color: "#FF385C", fontWeight: 'bold' }}>CClone do AirBnb</span> oom o React</p>
+        <p>Conheça <span style={{ color: "#FF385C", fontWeight: 'bold' }}>AirBnb</span> com o <span style={{ color: "#FF385C", fontWeight: 'bold' }}>Meu</span><span style={{ color: "#590f87", fontWeight: 'bold' }}>Kubico</span></p>
       </div>
       <div className="login__form-container">
         <div className="login__form">
@@ -94,7 +96,7 @@ const Login = (props) => {
             Entrar
           </button>
           <span className="login__forgot-password">Esqueceu a Senha?</span>
-          <span className="login__signup" onClick={() => toggleModal(true)}>Criar nova Conta</span>
+          <span className="login__signup" onClick={() => toggleModal(true)}>Criar Conta</span>
         </div>
       </div>
     </div>

@@ -88,7 +88,7 @@ const Create = ({ toggleModal }) => {
     <div className="create">
       <div className="create__content">
         <div className="create__container">
-          <div className="create__title">Create</div>
+          <div className="create__title">Criar</div>
           <div className="create__close">
             <img
               alt="close"
@@ -100,7 +100,7 @@ const Create = ({ toggleModal }) => {
         <div className="create__subtitle"></div>
         <div className="create__form">
           {!imageToHouse && <div className="create__upload" onClick={() => filePickerRef.current.click()}>
-            Choose House Image
+          Escolha a imagem da casa
           </div>}
           {imageToHouse && <div className="create__image">
             <img src={imageToHouse} alt="house" onClick={() => filePickerRef.current.click()} />
@@ -111,7 +111,7 @@ const Create = ({ toggleModal }) => {
           <input type="text" placeholder="Address" ref={addressRef} />
           <input type="text" placeholder="Description" ref={descriptionRef} />
           <button className="create__btn" onClick={create}>
-            Create
+            Criar
           </button>
         </div>
       </div>

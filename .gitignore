@@ -24,3 +24,6 @@ yarn-error.log*
 
 .env
 MOCK.md
+
+.CHAVES
+MOCK.md

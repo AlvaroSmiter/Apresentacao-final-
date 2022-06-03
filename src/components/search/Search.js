@@ -53,15 +53,15 @@ const Search = () => {
       <div id="search-container" className="search__container">
         <div className="search__form">
           <div className="search__form-input search__form-element">
-            <span>Location</span>
+            <span>Localização</span>
             <input type="text" placeholder="Where will you go?" ref={searchRef} />
           </div>
           <div className="search__form-start-date search__form-element">
-            <span>Start Date</span>
+            <span>Data de início</span>
             <DatePicker selected={startDate} onChange={(date) => setStartDate(date)} />
           </div>
           <div className="search__form-end-date search__form-element">
-            <span>End Date</span>
+            <span>Data final</span>
             <DatePicker selected={endDate} onChange={(date) => setEndDate(date)} />
           </div>
           <div className="search__icon" onClick={searchHouses}>

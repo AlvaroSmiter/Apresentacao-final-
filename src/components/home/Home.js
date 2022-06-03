@@ -16,10 +16,10 @@ const Home = () => {
     <div className="home">
       <img src={bg} alt="bg" />
       <div className="home__title">
-        <h1>Could not find the place to go?</h1>
-        <h1>Great!</h1>
+        <h1>Quer viajar mas não sabe onde ficar?</h1>
+        <h1>Excelente, veio ao lugar certo</h1>
         <div className="home__button-container">
-          <button>Quick Search</button>
+          <button>Pesquisar</button>
         </div>
       </div>
     </div>

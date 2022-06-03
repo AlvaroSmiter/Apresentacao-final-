@@ -50,7 +50,7 @@ const Header = ({ toggleModal }) => {
   };
 
   const logout = async () => {
-    const isLogout = window.confirm('Do you want to log out ?');
+    const isLogout = window.confirm('Você quer sair ?');
     if (isLogout) {
       await logoutCometChat();
       removeAuthedInfo();
@@ -79,7 +79,7 @@ const Header = ({ toggleModal }) => {
               <div className="header__image-wrapper">
                 <img src={user.avatar} alt={user.email} />
               </div>
-              <span>Hello, {user.fullname}</span>
+              <span>Óla, {user.fullname}</span>
             </div>
           )
         }
@@ -87,11 +87,11 @@ const Header = ({ toggleModal }) => {
       <div id="header-middle" className="header__middle">
         <div className="header__middle-container">
           <div className="header__middle-item">
-            <p onClick={changeMenu(MENUS.HOMES)}>Home</p>
+            <p onClick={changeMenu(MENUS.HOMES)}>Casa</p>
             {menu === MENUS.HOMES && <div></div>}
           </div>
           <div className="header__gap header__middle-item">
-            <p onClick={changeMenu(MENUS.EXPERIENCES)}>Experiences</p>
+            <p onClick={changeMenu(MENUS.EXPERIENCES)}>Experiências</p>
             {menu === MENUS.EXPERIENCES && <div></div>}
           </div>
           <div className="header__middle-item">
@@ -101,9 +101,9 @@ const Header = ({ toggleModal }) => {
         </div>
       </div>
       <div className="header__actions">
-        <span className="header__action" onClick={chat}><span>Chat</span></span>
-        <span className="header__action" onClick={create}><span>Create</span></span>
-        <span className="header__action" onClick={logout}><span>Logout</span></span>
+        <span className="header__action" onClick={chat}><span>Conversar</span></span>
+        <span className="header__action" onClick={create}><span>Criar</span></span>
+        <span className="header__action" onClick={logout}><span>Sair</span></span>
       </div>
     </div>
   );

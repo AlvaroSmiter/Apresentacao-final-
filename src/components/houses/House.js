@@ -23,7 +23,7 @@ const House = ({ house, keyword }) => {
     <div className="house" onClick={view}>
       <img src={house.image} alt="house" />
       <div className="house__info">
-        <p className="house__title">Private room at {keyword}</p>
+        <p className="house__title">Quarto privada em {keyword}</p>
         <p className="house__name">{house.name}</p>
         <div className="house__divider"></div>
         <p className="house__description">{house.description}</p>
@@ -32,8 +32,8 @@ const House = ({ house, keyword }) => {
           <span>4.82</span>
         </div>
         <div className="house__price">
-          <span className="house__price-value">{house.price}$</span>
-          <span> / night</span>
+          <span className="house__price-value">{house.price}Kz</span>
+          <span> / Noite</span>
         </div>
       </div>
     </div>

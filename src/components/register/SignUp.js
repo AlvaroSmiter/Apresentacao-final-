@@ -115,7 +115,7 @@ const SignUp = (props) => {
     <div className="signup">
       <div className="signup__content">
         <div className="signup__container">
-          <div className="signup__title">Sign Up</div>
+          <div className="signup__title">Inscrever-se</div>
           <div className="signup__close">
             <img
               alt="close"
@@ -132,8 +132,8 @@ const SignUp = (props) => {
           <input type="text" placeholder="Address" ref={addressRef} />
           <input type="text" placeholder="About" ref={aboutRef} />
           <select ref={roleRef}>  
-            <option value="1" defaultChecked>Host</option>
-            <option value="0">Non-Host</option>
+            <option value="1" defaultChecked>Anfitrião</option>
+            <option value="0">Cliente</option>
           </select>
           <input type="password" placeholder="Password" ref={passwordRef} />
           <input
@@ -142,7 +142,7 @@ const SignUp = (props) => {
             ref={confirmPasswordRef}
           />
           <button className="signup__btn" onClick={signup}>
-            Sign Up
+          Inscrever-se
           </button>
         </div>
       </div>
